@@ -54,15 +54,28 @@
             margin-bottom: 15px;
         }
         
+        /* Link styling for names */
+        .bio a {
+            color: #ff4d4d;
+            text-decoration: none;
+            border-bottom: 1px dotted #ff4d4d;
+            transition: color 0.2s;
+        }
+        
+        .bio a:hover {
+            color: #ff9999;
+            border-bottom: 1px solid #ff9999;
+        }
+        
         .links {
             text-align: center;
         }
         
         .btn {
-            display: inline-flex; /* Changed to flex to align icon and text */
+            display: inline-flex;
             align-items: center;
             justify-content: center;
-            gap: 10px; /* Space between icon and text */
+            gap: 10px;
             padding: 12px 30px;
             background-color: #8b0000;
             color: white;
@@ -79,7 +92,7 @@
         .btn svg {
             width: 20px;
             height: 20px;
-            fill: white; /* Ensures icon is white */
+            fill: white;
         }
         
         footer {
@@ -99,12 +112,11 @@
         
         <section class="bio">
             <h2>About</h2>
-            <p>VSS CLUB is Stef Animal and Paul Fox. Based in Dunedin, New Zealand, they create music using initially improvised pieces that are then sculpted into the final product.</p>
+            <p>VSS CLUB is <a href="stef.html">Stef Animal</a> and <a href="paul.html">Paul Fox</a>. Based in Dunedin, New Zealand, they create music using initially improvised pieces that are then sculpted into the final product.</p>
         </section>
         
         <section class="links">
             <a href="https://vssclub.bandcamp.com/album/vss-club" class="btn" target="_blank" rel="noopener noreferrer">
-                <!-- Bandcamp Icon SVG -->
                 <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 22c-5.523 0-10-4.477-10-10S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1.5-14l-4 6 4 6 4-6-4-6z"/>
                 </svg>
